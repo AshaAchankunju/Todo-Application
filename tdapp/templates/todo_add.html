@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+
+{%block title_block%}
+<title>Add activity</title>
+{%endblock%}
+
+{%block main_block%}
+<div class="container">
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">Add</button>
+    </form>
+</div>
+{%endblock%}
